@@ -69,15 +69,16 @@ alloftheabove (){
                 geoip
                 findshareddns
                 reversedns
-}
-
-clear
-actions
-echo ""
-echo -ne Enter your chois"
-read ch 
-case $ch in
-
+ } 
+  
+ clear 
+ logo 
+ actions 
+ echo "" 
+ echo -ne "${Green}[#] Enter your choice: ${White}" 
+ read ch 
+ case  $ch  in 
+  
         1) 
             input
         pagelink ;;
