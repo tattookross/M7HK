@@ -98,11 +98,20 @@ case $ch in
             input 
         All ;;
         
-        A)
-            echo -e "${Cyan}[*] INVALID OPTION"
-            sleep 0.2
-            echo -e "${Cyan}[*] Exiting..."
-            sleep 0.2
-            exit ;;
-            
-esac
+        Q)         
+         echo -e "${Cyan}[*] Exiting..." 
+         sleep 0.2 
+         exit ;; 
+  
+  
+     * ) 
+     echo -e "${Cyan}[*] INVALID OPTION"   
+     sleep 0.2 
+     echo -e "${Cyan}[*] Exiting..." 
+     sleep 0.2 
+     exit ;; 
+  
+esac 
+  
+  
+ 
