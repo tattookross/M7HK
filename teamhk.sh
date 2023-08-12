@@ -31,10 +31,6 @@
          echo -e "${Cyan}[4]  ReverseDNS"   #reversedns 
          echo -e "${Yellow}[5] All of the Above" 
          echo -e "${Red}[Q]  Exit" 
-        
-}
-
-
 } 
 input () { 
          echo -ne "${Green}[#] Enter Hostname: ${White}" 
