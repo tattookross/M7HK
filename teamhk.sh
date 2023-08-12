@@ -9,12 +9,12 @@ actions () {
 
         echo""
             
-        echo -e "${Cyan} [1] pagelinks"         #pagelinks
-        echo -e "${Cyan} [2] geoip"            #geoip
-        echo -e "${Cyan} [3] findshareddns"        #findshareddns
-        echo -e "${Cyan} [4] reversedns"       #reversedns
-        echo -e "${Cyan} [5] All"
-        echo -e "${Cyan} [A] Exit"
+        echo -e "${Cyan}[1] pagelinks"         #pagelinks
+        echo -e "${Cyan}[2] geoip"            #geoip
+        echo -e "${Cyan}[3] findshareddns"        #findshareddns
+        echo -e "${Cyan}[4] reversedns"       #reversedns
+        echo -e "${Cyan}[5] All"
+        echo -e "${Cyan}[A] Exit"
         
 }
 
