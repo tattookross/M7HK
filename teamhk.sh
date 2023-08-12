@@ -36,9 +36,10 @@
 }
 
 
-input () {
-        echo
-        echo -ne " Enter hostname: "
+} 
+input () { 
+         echo -ne "${Green}[#] Enter Hostname: ${White}" 
+         read hostname; 
 }
 pagelinks () {
              #input
