@@ -77,7 +77,7 @@ alloftheabove (){
   
         1) 
             input
-        pagelink ;;
+        pagelinks ;;
         
         2)
             input
