@@ -35,7 +35,7 @@
 input () { 
          echo -ne "${Green}[#] Enter Hostname: ${White}" 
          read hostname; 
- } 
+} 
  pagelinks () { 
          #input 
          #echo -e "${Red}------------------------------------${white}" 
