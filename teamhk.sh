@@ -1,24 +1,28 @@
-#!/bin/bash
-Black='\033[1;30m'        # Black 
-Red='\033[1;31m'          # Red 
-Green='\033[1;32m'        # Green 
-Yellow='\033[1;33m'       # Yellow 
-Blue='\033[1;34m'         # Blue 
-Purple='\033[1;35m'       # Purple 
-Cyan='\033[1;36m'         # Cyan 
-White='\033[1;37m'        # White 
-NC='\033[0m' 
-blue='\033[0;34m' 
-white='\033[0;37m' 
-lred='\033[0;31m' 
-brown='\033[0;33m' 
+#!/bin/bash 
+ Black='\033[1;30m'        # Black 
+ Red='\033[1;31m'          # Red 
+ Green='\033[1;32m'        # Green 
+ Yellow='\033[1;33m'       # Yellow 
+ Blue='\033[1;34m'         # Blue 
+ Purple='\033[1;35m'       # Purple 
+ Cyan='\033[1;36m'         # Cyan 
+ White='\033[1;37m'        # White 
+ NC='\033[0m' 
+ blue='\033[0;34m' 
+ white='\033[0;37m' 
+ lred='\033[0;31m' 
+ brown='\033[0;33m' 
   
-logo () { 
-echo -e "\033[1;31m \t 
-
-perform are:"           
-actions () {
-
+ logo () { 
+ echo -e "\033[1;31m \t 
+  
+ 
+ \t██║░░██║███████╗╚█████╔╝╚█████╔╝██║░╚███║░░░░░░██╔╝╚██╗  ${White}by: M7HKUMBRELLA a.k.a y_k_007${Red} 
+ 
+ "; 
+ } 
+ actions () { 
+        
         echo -e "${Purple}[~] Available Actions to perform are:"    
         echo""
             
@@ -40,28 +44,25 @@ pagelinks () {
              #input
              echo -e
              curl
-https://hackertarget.com/pagelinks/?q=$hostname
---connect-timeup 15
+https://hackertarget.com/pagelinks/?q=$hostname --connect-timeup 15
 }
 geoip () {
              echo -e
              curl
-https://hackertarget.com/geoip/?q=$hostname
---connect-timeup 15
+https://hackertarget.com/geoip/?q=$hostname --connect-timeup 15
 }
 findshareddns () {
              #input
              echo -e
              curl
-https://hackertarget.com/findshareddns/?q=$hostname
---connect-timeup 15
+https://hackertarget.com/findshareddns/?q=$hostname --connect-timeup 15
 }
 reversedns () {
              #input
              echo -e
              curl
-https://hackertarget.com/reversedns/?q=$hostname
---connect-timeup 15
+ip=$(curl https://api.hackertarget.com/hostsearch/?q=$hostname --connect-timeout 15 | grep "$hostname" | sed 's/.*,//') 
+         curl https://api.hackertarget.com/reversedns/?q=$ip --connect-timeout 15 
 }
 alloftheabove (){
                 pagelinks
