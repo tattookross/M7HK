@@ -22,16 +22,15 @@
  "; 
  } 
  actions () { 
-        
-        echo -e "${Purple}[~] Available Actions to perform are:"    
-        echo""
-            
-        echo -e "${Cyan}[1] pagelinks"         #pagelinks
-        echo -e "${Cyan}[2] geoip"            #geoip
-        echo -e "${Cyan}[3] findshareddns"        #findshareddns
-        echo -e "${Cyan}[4] reversedns"       #reversedns
-        echo -e "${Cyan}[5] All"
-        echo -e "${Cyan}[Q] Exit"
+         echo -e "${Purple}[~] Available Actions to perform are:"         
+         echo ""
+           
+         echo -e "${Cyan}[1]  PageLinks"    #pagelinks         
+         echo -e "${Cyan}[2] GeoIP"        #geoip            
+         echo -e "${Cyan}[3] SharedDNS"    #findshareddns         
+         echo -e "${Cyan}[4]  ReverseDNS"   #reversedns 
+         echo -e "${Yellow}[5] All of the Above" 
+         echo -e "${Red}[Q]  Exit" 
         
 }
 
