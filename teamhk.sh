@@ -105,7 +105,7 @@ alloftheabove (){
         
         3)
             input
-        findshareddns ;;
+        shareddns ;;
         
         4)
             input
