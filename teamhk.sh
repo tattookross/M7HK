@@ -47,24 +47,39 @@ input () {
          curl https://api.hackertarget.com/pagelinks/?q=$hostname --connect-timeout 15 
   
  } 
-geoip () {
-             echo -e
-             curl
-https://hackertarget.com/geoip/?q=$hostname --connect-timeup 15
-}
-findshareddns () {
-             #input
-             echo -e
-             curl
-https://hackertarget.com/findshareddns/?q=$hostname --connect-timeup 15
-}
-reversedns () {
-             #input
-             echo -e
-             curl
-ip=$(curl https://api.hackertarget.com/hostsearch/?q=$hostname --connect-timeout 15 | grep "$hostname" | sed 's/.*,//') 
+ shareddns () { 
+         #input 
+         #echo -e "${Red}------------------------------------${white}" 
+         echo 
+         echo -e "${Blue}+--------------------------------+${White}" 
+         echo -e "${Blue}+          ${Yellow}[${Green}SharedDNS${Yellow}]${Blue}           +${White}" 
+         echo -e "${Blue}+--------------------------------+${White}" 
+  
+         curl https://api.hackertarget.com/findshareddns/?q=$hostname --connect-timeout 15 
+  
+ } 
+ geoip () { 
+         #input 
+         #echo -e "${Red}------------------------------------${white}" 
+         echo 
+         echo -e "${Blue}+--------------------------------+${White}" 
+         echo -e "${Blue}+            ${Yellow}[${Green}GeoIP${Yellow}]${Blue}             +${White}" 
+         echo -e "${Blue}+--------------------------------+${White}" 
+  
+         curl https://api.hackertarget.com/geoip/?q=$hostname --connect-timeout 15 
+  
+} 
+ reversedns () { 
+         #input 
+         #echo -e "${Red}------------------------------------${white}" 
+         echo 
+         echo -e "${Blue}+--------------------------------+${White}" 
+         echo -e "${Blue}+         ${Yellow}[${Green}reverseDNS${Yellow}]${Blue}           +${White}" 
+         echo -e "${Blue}+--------------------------------+${White}" 
+         ip=$(curl https://api.hackertarget.com/hostsearch/?q=$hostname --connect-timeout 15 | grep "$hostname" | sed 's/.*,//') 
          curl https://api.hackertarget.com/reversedns/?q=$ip --connect-timeout 15 
-}
+  
+ } 
 alloftheabove (){
                 pagelinks
                 geoip
