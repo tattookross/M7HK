@@ -1,12 +1,25 @@
 #!/bin/bash
-Cyan='\033[1;36m'   #Cyan
-NoColor='\033[0m'   #NoColor
-
+Black='\033[1;30m'        # Black 
+ Red='\033[1;31m'          # Red 
+ Green='\033[1;32m'        # Green 
+ Yellow='\033[1;33m'       # Yellow 
+ Blue='\033[1;34m'         # Blue 
+ Purple='\033[1;35m'       # Purple 
+ Cyan='\033[1;36m'         # Cyan 
+ White='\033[1;37m'        # White 
+ NC='\033[0m' 
+ blue='\033[0;34m' 
+ white='\033[0;37m' 
+ lred='\033[0;31m' 
+ brown='\033[0;33m' 
+  
+ logo () { 
+ echo -e "\033[1;31m \t 
 
 perform are:"           
 actions () {
 
-
+        echo -e "${Purple}[~] Available Actions to perform are:"    
         echo""
             
         echo -e "${Cyan}[1] pagelinks"         #pagelinks
