@@ -31,7 +31,7 @@
         echo -e "${Cyan}[3] findshareddns"        #findshareddns
         echo -e "${Cyan}[4] reversedns"       #reversedns
         echo -e "${Cyan}[5] All"
-        echo -e "${Cyan}[A] Exit"
+        echo -e "${Cyan}[Q] Exit"
         
 }
 
@@ -104,12 +104,12 @@ case $ch in
          exit ;; 
   
   
-     * ) 
-     echo -e "${Cyan}[*] INVALID OPTION"   
-     sleep 0.2 
-     echo -e "${Cyan}[*] Exiting..." 
-     sleep 0.2 
-     exit ;; 
+        *) 
+         echo -e "${Cyan}[*] INVALID OPTION"   
+         sleep 0.2 
+         echo -e "${Cyan}[*] Exiting..." 
+         sleep 0.2 
+         exit ;; 
   
 esac 
   
