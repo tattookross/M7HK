@@ -93,7 +93,7 @@ alloftheabove (){
         
         5)
             input 
-        All ;;
+        All of the Above ;;
         
         Q)         
          echo -e "${Cyan}[*] Exiting..." 
