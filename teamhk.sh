@@ -1,6 +1,6 @@
 #!/bin/bash
-Cyan='\033[0;36m'
-NoColor='\033[0m'
+Cyan='\033[1;36m'   #Cyan
+NoColor='\033[0m'   #NoColor
 
 
 perform are:"           
