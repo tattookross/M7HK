@@ -35,13 +35,18 @@
 input () { 
          echo -ne "${Green}[#] Enter Hostname: ${White}" 
          read hostname; 
-}
-pagelinks () {
-             #input
-             echo -e
-             curl
-https://hackertarget.com/pagelinks/?q=$hostname --connect-timeup 15
-}
+ } 
+ pagelinks () { 
+         #input 
+         #echo -e "${Red}------------------------------------${white}" 
+         echo 
+         echo -e "${Blue}+--------------------------------+${White}" 
+         echo -e "${Blue}+         ${Yellow}[${Green}PageLinks${Yellow}]${Blue}            +${White}" 
+         echo -e "${Blue}+--------------------------------+${White}" 
+  
+         curl https://api.hackertarget.com/pagelinks/?q=$hostname --connect-timeout 15 
+  
+ } 
 geoip () {
              echo -e
              curl
@@ -93,7 +98,7 @@ alloftheabove (){
         
         5)
             input 
-        All of the Above ;;
+        alloftheabove ;;
         
         Q)         
          echo -e "${Cyan}[*] Exiting..." 
