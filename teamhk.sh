@@ -100,9 +100,9 @@ case $ch in
         
         A)
             echo -e "${Cyan}[*] INVALID OPTION"
-            sleep 2.0
+            sleep 0.2
             echo -e "${Cyan}[*] Exiting..."
-            sleep 2.0
+            sleep 0.2
             exit ;;
             
 esac
