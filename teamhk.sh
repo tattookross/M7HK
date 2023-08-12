@@ -17,7 +17,7 @@
  echo -e "\033[1;31m \t 
   
  
- \t██║░░██║███████╗╚█████╔╝╚█████╔╝██║░╚███║░░░░░░██╔╝╚██╗  ${White}by: M7HKUMBRELLA a.k.a y_k_007${Red} 
+ \t███  ${White}by: M7HKUMBRELLA a.k.a y_k_007${Red}███ 
  
  "; 
  } 
